@@ -4,3 +4,15 @@
 
 layout: home
 ---
+
+# {{ site.title }}
+
+---
+
+![profile](images/profile.jpg "James Ashford profile picture")
+
+---
+
+{{ site.description }}
+
+---

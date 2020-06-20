@@ -1,0 +1,31 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+      .home p {
+        padding: 10px;
+      }
+
+      .home img {
+        border-radius: 10%;
+        width: 250px;
+      }
+
+      .post {
+        max-width: 800px;
+        margin: 10px auto;
+        padding: 10px;
+      }
+    </style>
+
+    <title>{{ site.title }}</title>
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+</head>
